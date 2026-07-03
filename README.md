@@ -1,35 +1,30 @@
 # Web Scraping tool
+📰 News Headlines Scraper with Text-to-Speech
 
-**WebScraperPy** - A Simple Web Scraping Tool Using Python
+A Python automation project that uses Selenium WebDriver to scrape the latest top headlines from the Hindustan Times website and converts each headline into an MP3 audio file using Google Text-to-Speech (gTTS).
 
-WebScraperPy is a lightweight and beginner-friendly web scraping tool written in Python. It allows users to extract data from websites using simple and clean code, powered by requests, BeautifulSoup, and optionally pandas for data export.
+Features
+🌐 Automates Firefox browser using Selenium.
+📰 Extracts top news headlines from Hindustan Times.
+📄 Saves all headlines to a text file.
+🔊 Converts each headline into a separate MP3 audio file.
+📁 Automatically creates output directories if they do not exist.
+🧹 Closes the browser safely after execution.
+Technologies Used
+Python
+Selenium WebDriver
+Firefox (GeckoDriver)
+Google Text-to-Speech (gTTS)
+Project Workflow
+Launch Firefox using GeckoDriver.
+Open the Hindustan Times homepage.
+Scrape the latest top headlines.
+Display headlines in the console.
+Save headlines to a text file.
+Convert each headline into speech and save it as an MP3 file.
+Close the browser and exit the program.
+Output
+docs/headlines/Headlines.txt – Contains all scraped headlines.
+audio/ – Contains MP3 files for each headline.
 
-**Features**
-
-Fetches HTML content from any public URL
-
-Parses HTML using BeautifulSoup
-
-Extracts data like titles, headings, links, tables, and more
-
-Exports scraped data to CSV or JSON
-
-Easy to customize for different websites
-
-**How It Works**
-
-**1 Send HTTP Request**
-
-The tool uses the requests library to send an HTTP GET request to the target URL and fetch the HTML content.
-
-**2 Parse HTML Content**
-
-The response is passed into BeautifulSoup, which parses the HTML and creates a navigable tree structure.
-
-**3 Extract Targeted Data**
-
-Specific HTML elements (e.g.<h1>, <a>, <div>, table rows) are selected using tags, classes, or IDs to extract data.
-
-**4 Export Data (Optional)**
-
-The extracted data can be saved in structured formats like .csv or .json for analysis or storage.
+This project demonstrates the use of web scraping, browser automation, file handling, and text-to-speech conversion in Python, making it a practical example of automation and data extraction.
